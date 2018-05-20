@@ -62,7 +62,7 @@ module SimpleForm
         if opts.nil?
           autocomplete_options = rewrite_autocomplete_option
         else
-          merge_wrapper_options(rewrite_autocomplete_option, args)
+          merge_wrapper_options(rewrite_autocomplete_option, opts)
         end
 
         label_method, value_method = detect_collection_methods
